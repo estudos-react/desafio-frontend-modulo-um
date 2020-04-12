@@ -6,16 +6,23 @@
 
 body {
   font-size: 14px;
+  font-family: sans-serif;
 }
 
 div {
   width: 100%;
-  margin: 20px;
+  padding: 20px;
+}
+
+div ul{
+  width: 100%;
+  max-width: 400px;
 }
 
 div li {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 div li + li {
@@ -31,9 +38,17 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  border-radius:5px;
 }
 
 div li button {
   margin: 0 15px;
+  padding: 5px 10px;
   background: #ca4949;
+  font-size: 12px;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: #333;
 }
