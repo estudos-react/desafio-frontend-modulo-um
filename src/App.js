@@ -20,7 +20,8 @@ function App() {
   async function handleAddRepository() {
     const response = await api.post('repositories', {
       title: `Project - Version: ${randomIntegerNumber()}`,
-      owner: 'Markim'
+      owner: 'Markim',
+      techs: ['ReactJS', 'React Native', 'NodeJS']
     });
 
     const repository = response.data;
